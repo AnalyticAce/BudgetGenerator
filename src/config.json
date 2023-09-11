@@ -1,0 +1,55 @@
+{
+    "budgets": [
+        {
+            "event_name": "Info Session",
+            "event_date": "2023-09-11",
+            "expenses": [
+                {
+                    "id": "6de541",
+                    "category": "Miscellaneous",
+                    "particular": "Internet data",
+                    "quantity": 1,
+                    "description": "Buy data for unplanned events",
+                    "price": 1500.0,
+                    "total_cost": 1500.0
+                },
+                {
+                    "id": "ce8157",
+                    "category": "Accommodation",
+                    "particular": "Chambre de passage",
+                    "quantity": 1,
+                    "description": "Les bon plans",
+                    "price": 6500.0,
+                    "total_cost": 6500.0
+                },
+                {
+                    "id": "2ee650",
+                    "category": "Miscellaneous",
+                    "particular": "Pr\u00e9servative",
+                    "quantity": 24,
+                    "description": "On ne sait jamais ooh",
+                    "price": 1500.0,
+                    "total_cost": 36000.0
+                },
+                {
+                    "id": "20d637",
+                    "category": "Transportation",
+                    "particular": "Location de v\u00e9hicule",
+                    "quantity": 2,
+                    "description": "B\u00e9nin to Togo",
+                    "price": 150000.0,
+                    "total_cost": 300000.0
+                },
+                {
+                    "id": "f49509",
+                    "category": "Entertainment",
+                    "particular": "Abonnement Netflix",
+                    "quantity": 3,
+                    "description": "Chill",
+                    "price": 6500.0,
+                    "total_cost": 19500.0
+                }
+            ]
+        }
+    ]
+}
