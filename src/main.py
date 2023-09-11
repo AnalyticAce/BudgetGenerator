@@ -6,6 +6,12 @@ from secrets import *
 import xlsxwriter
 import plotly.express as px
 
+# Streamlit app code
+st.set_page_config(
+    page_title="Budget Generator",
+    page_icon="💰",  # Add an emoji as the page icon
+)
+
 predefined_categories = ["Food", "Transportation", "Accommodation", "Entertainment", "Miscellaneous"]
 
 def load_budget_data():
