@@ -1,1 +1,6 @@
 streamlit
+pandas
+secrets
+xlsxwriter
+plotly
+json

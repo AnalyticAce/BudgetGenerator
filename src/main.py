@@ -132,7 +132,7 @@ st.title("Budget Generator")
 
 option = st.selectbox("Select an Option:", ["Log Old Event", "Add New Session"])
 
-if option == "Log Old Event":
+if option == "Upload Old Event":
     existing_events = [item["event_name"] for item in load_budget_data()["budgets"]]
     selected_event = st.selectbox("Select an existing event:", existing_events)
 
