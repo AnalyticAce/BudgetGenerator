@@ -9,7 +9,7 @@ import plotly.express as px
 # Streamlit app code
 st.set_page_config(
     page_title="Budget Generator",
-    page_icon="💰",  # Add an emoji as the page icon
+    page_icon="💰",
 )
 
 predefined_categories = ["Food", "Transportation", "Accommodation", "Entertainment", "Miscellaneous"]
@@ -25,8 +25,6 @@ def load_budget_data():
         data = {"budgets": []}
     
     return data
-
-
 
 
 def add_budget_item(event_name, event_date, category, particular, quantity, description, price):
@@ -65,8 +63,6 @@ def add_budget_item(event_name, event_date, category, particular, quantity, desc
     st.success("Expense added successfully!")
 
 
-
-
 def delete_budget_item(event_name, expense_id):
 
     data = load_budget_data()
@@ -81,8 +77,6 @@ def delete_budget_item(event_name, expense_id):
             json.dump(data, config_file, indent=4)
 
         st.sidebar.success(f"Expense with ID {expense_id} deleted successfully!")
-
-
 
 def export_to_excel(dataframe, event_name):
 
@@ -125,7 +119,6 @@ def export_to_excel(dataframe, event_name):
     worksheet.add_table(0, 0, dataframe.shape[0], dataframe.shape[1], {'columns': [{'header': column} for column in dataframe.columns]})
 
     excel_writer.close()
-
 
 
 st.title("Budget Generator")
