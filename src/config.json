@@ -1,35 +1,26 @@
 {
     "budgets": [
         {
-            "event_name": "Info Session",
-            "event_date": "2023-09-11",
+            "event_name": "MasterClass Python",
+            "event_date": "2023-09-13",
             "expenses": [
                 {
-                    "id": "6de541",
+                    "id": "4a3c74",
+                    "category": "Food",
+                    "particular": "Food pour les invit\u00e9s",
+                    "quantity": 100,
+                    "description": "le bouf",
+                    "price": 350.0,
+                    "total_cost": 35000.0
+                },
+                {
+                    "id": "0a7bdf",
                     "category": "Miscellaneous",
-                    "particular": "Internet data",
+                    "particular": "Achat de forfait au cas ou",
                     "quantity": 1,
-                    "description": "Buy data for unplanned events",
+                    "description": "forfait internet",
                     "price": 1500.0,
                     "total_cost": 1500.0
-                },
-                {
-                    "id": "20d637",
-                    "category": "Transportation",
-                    "particular": "Location de v\u00e9hicule",
-                    "quantity": 2,
-                    "description": "B\u00e9nin to Togo",
-                    "price": 150000.0,
-                    "total_cost": 300000.0
-                },
-                {
-                    "id": "f49509",
-                    "category": "Entertainment",
-                    "particular": "Abonnement Netflix",
-                    "quantity": 3,
-                    "description": "Chill",
-                    "price": 6500.0,
-                    "total_cost": 19500.0
                 }
             ]
         }

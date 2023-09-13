@@ -6,7 +6,6 @@ from secrets import *
 import xlsxwriter
 import plotly.express as px
 
-# Streamlit app code
 st.set_page_config(
     page_title="Budget Generator",
     page_icon="💰",
@@ -125,7 +124,7 @@ st.title("Budget Generator")
 
 option = st.selectbox("Select an Option:", ["Log Old Event", "Add New Session"])
 
-if option == "Upload Old Event":
+if option == "Log Old Event":
     existing_events = [item["event_name"] for item in load_budget_data()["budgets"]]
     selected_event = st.selectbox("Select an existing event:", existing_events)
 
@@ -141,7 +140,7 @@ elif option == "Add New Session":
     particular = st.text_input("Particular (e.g., name of the item)")
     quantity = st.number_input("Quantity", min_value=1, step=1)
     description = st.text_input("Description")
-    price = st.number_input("Price", min_value=0.01, step=0.01)
+    price = st.number_input("Price", min_value=5, step=5)
 
     if st.button("Add Expense"):
         add_budget_item(event_name, event_date, category, particular, quantity, description, price)
